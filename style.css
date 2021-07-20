@@ -9,13 +9,13 @@ header{
   background-color: #ff9a4b;
 }
 
-.main{
+main{
   width: 960px;
   margin: 50px auto;
   display: flex;
 }
 
-.box{
+.step-box{
   width: 300px;
   margin-left: 30px;
   padding: 10px;
@@ -23,43 +23,42 @@ header{
   position: relative;
 }
 
-.box:first-child{
+.step-box:first-child{
   margin-left: 0px;
 }
 
-.image{
+.step-img1{
   height: 150px;
-  background-position: center;
+  background-image: url(img/flow01.png);
+  background-position: bottom;
   background-size: cover;
 }
 
-.flow1{
-  background-image: url(img/flow01.png);
-}
-
-.flow2{
+.step-img2{
+  height: 150px;
   background-image: url(img/flow02.png);
+  background-position: bottom;
+  background-size: cover;
 }
 
-.flow3{
+.step-img3{
+  height: 150px;
   background-image: url(img/flow03.png);
+  background-position:bottom;
+  background-size: cover;
 }
 
-h3{
-  margin-top: 15px;
-}
-
-p{
-  margin-top: 5px;
-}
-
-.step{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: #ff9a4b;
-  color: #FFFFFF;
+.step-num {
   padding: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #fff;
+}
+
+.title{
+  margin: 15px 0 5px;
 }
 
 footer{
@@ -67,25 +66,32 @@ footer{
   background-color: #AAAAAA;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
   
   header{
     width: 100%;
   }
 
-  .main{
+  main{
     width: 100%;
     display: block;
   }
 
-  .box{
+  .step-box{
     width: 90%;
+    /* margin: 20px 5% 0 5%; */
+    padding: 3%;
     margin-top: 20px;
     margin-left: 5%;
   }
 
-  .box:first-child{
-    margin-left: 5%;
+  .step-box:first-child{
+    margin-left: 5%; 
+
+  }
+
+  .title{
+    width: 100%;
   }
 
   footer{
